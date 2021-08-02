@@ -1,0 +1,45 @@
+@mixin flexBox($justify: flex-start, $align: flex-start, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin grid($temp-col: 1fr, $temp-row: auto, $col-gap: auto, $row-gap: auto) {
+  display: grid;
+  grid-template-columns: $temp-col;
+  grid-template-rows: $temp-row;
+  grid-column-gap: $col-gap;
+  grid-row-gap: $row-gap;
+}
+
+@mixin box-shadow($x, $y, $z, $blur, $c) {
+  -webkit-box-shadow: $x $y $z $blur $c;
+  -moz-box-shadow: $x $y $z $blur $c;
+  -ms-box-shadow: $x $y $z $blur $c;
+  box-shadow: $x $y $z $blur $c;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin tablet-up {
+  @media only screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media only screen and (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+//recommended not to use mixin for media queries
+
+@mixin desktop-only {
+  @media only screen and (min-width: $bp-desktop) {
+    @content;
+  }
+}

@@ -1,0 +1,74 @@
+html * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Exo;
+  font-size: 16px;
+}
+
+html body h1 {
+  font-size: 40px;
+  color: #152c43;
+}
+
+html body h2 {
+  font-size: 30px;
+  color: #152c43;
+}
+
+html body h3 {
+  font-size: 24px;
+}
+
+html body h4 {
+  font-size: 20px;
+}
+
+html body a {
+  text-decoration: none;
+  color: #06a0ff;
+}
+
+html body a a:hover {
+  color: #152c43;
+}
+
+html body p {
+  font-size: 16px;
+  color: #5c6774;
+  line-height: 1.81;
+}
+
+@media (max-width: 490px) {
+  html body h1 {
+    font-size: 24px;
+    color: #152c43;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  html body h1 {
+    font-size: 24px;
+    color: #152c43;
+  }
+}
+
+.button {
+  -webkit-box-shadow: 0 4px 10px 0 rgba(6, 160, 255, 0.24);
+  -ms-box-shadow: 0 4px 10px 0 rgba(6, 160, 255, 0.24);
+  box-shadow: 0 4px 10px 0 rgba(6, 160, 255, 0.24);
+  background-color: #06a0ff;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  padding: 13px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  width: 185px;
+  height: 46px;
+  cursor: pointer;
+  margin-top: 28px;
+}
+/*# sourceMappingURL=common.css.map */

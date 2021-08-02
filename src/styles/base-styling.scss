@@ -1,0 +1,62 @@
+@import "breakpoints";
+@import "colors";
+@import "mixins";
+// @import "common";
+
+html {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Exo;
+    font-size: 16px; //62.5%
+  }
+
+  body {
+    h1 {
+      font-size: 40px; //4rem
+      color: $big-stone;
+    }
+    h2 {
+      font-size: 30px;
+      color: $big-stone;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: $dodger-blue;
+      a:hover {
+        color: $big-stone;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: $shuttle-gray; // need to be changed
+      line-height: 1.81;
+    }
+  }
+  @media (max-width: $bp-mobile) {
+    body {
+      h1 {
+        font-size: 24px;
+        color: $big-stone;
+      }
+    }
+  }
+
+  @include mobile-only {
+    body {
+      h1 {
+        font-size: 24px;
+        color: $big-stone;
+      }
+    }
+  }
+}
